@@ -1,1 +1,3 @@
-
+The `cfg` folder including all the configurations of the DRL algorithmes parameters with `PPO` at the end of the names and configurations parameters of the simulation environment.
+The `peg_in_hole` folder contains all the task setting files.
+When using it, just copy them into the corresponding folders in the `IsaacGymEnvs` folder, remember to add the task and environment into the `init.py` for registering the environments
