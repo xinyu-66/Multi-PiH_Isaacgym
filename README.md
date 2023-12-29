@@ -6,4 +6,4 @@
 
 [align_insert.webm](https://github.com/3505473356/Multi-PiH_Isaacgym/assets/89777028/5e2a311a-5484-4c46-9915-5a620e01fed4)
 
-Source code of isaacgym is in the `code` folder, for now, only the non-visual modalities are finished and the models will be uploaded later. I will update it when I finished using vision images as oberservation.
+Source code of isaacgym is in the `code` folder, for now, only the non-visual modalities(force feedback, pose, proprioceptions) are finished and the models will be uploaded later. I will update it when I finished using vision images as oberservation.
