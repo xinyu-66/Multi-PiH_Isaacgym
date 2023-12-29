@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<robot name="three_circle_peg">
+    <link name="three_circle_peg">
+        <visual>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="../mesh/factory_insertion/three_circle_peg.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="../mesh/factory_insertion/three_circle_peg.obj"/>
+            </geometry>
+            <sdf resolution="256"/>
+        </collision>
+    </link>
+
+    <joint name="base_to_grippoint" type="fixed">
+      <parent link="three_circle_peg"/>
+      <child link="grip_point"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.055"/>
+    </joint>
+
+    <!-- <joint name="grippoint_left" type="fixed">
+      <parent link="grip_point"/>
+      <child link="left_girpponit"/>
+      <origin rpy="0 0 0" xyz="0 0.03 0"/>
+    </joint>
+
+    <joint name="grippoint_right" type="fixed">
+      <parent link="grip_point"/>
+      <child link="right_girpponit"/>
+      <origin rpy="0 0 0" xyz="0 -0.03 0"/>
+    </joint> -->
+
+    <!-- <link name="left_girpponit">
+      <visual>
+        <geometry>
+          <sphere radius="0.0005"/>
+        </geometry>
+        <material name="red">
+          <color rgba="0.0 0.0 0.0 1" />
+        </material>
+        <origin xyz="0 0 0"/>
+      </visual>
+    </link>
+
+    <link name="right_girpponit">
+      <visual>
+        <geometry>
+          <sphere radius="0.0005"/>
+        </geometry>
+        <material name="red">
+          <color rgba="1.0 1.0 1.0 1" />
+        </material>
+        <origin xyz="0 0 0"/>
+      </visual>
+    </link> -->
+
+    <link name="grip_point">
+      <visual>
+        <geometry>
+          <sphere radius="0.0005"/>
+        </geometry>
+        <material name="Vis"/>
+        <origin xyz="0 0 0"/>
+      </visual>
+    </link>
+
+</robot>
